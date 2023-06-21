@@ -15,3 +15,16 @@ const to_do = [
     'Comprar entradas para el cine',
 ]
 
+const divContent = document.getElementById('container-div');
+
+to_do.forEach(element => {
+
+    const newDiv = document.createElement("ul");
+
+    const newContent = document.createTextNode(element);
+
+    newDiv.appendChild(newContent);
+
+    divContent.appendChild(newDiv);
+});
+
